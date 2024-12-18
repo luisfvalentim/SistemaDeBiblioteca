@@ -102,24 +102,5 @@ public class DevolucaoDAO {
         }
         return null;
     }
-
-    public Date buscarDataDevolucao(int idItemEmprestimo) {
-        String sql = "SELECT data_devolucao FROM devolucao WHERE id_itememprestimo = ?";
-        
-        try (Connection conn = DatabaseConnection.getConnection();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
-            
-            stmt.setInt(1, idItemEmprestimo);
-            ResultSet rs = stmt.executeQuery();
-            
-            if (rs.next()) {
-                return rs.getDate("data_devolucao"); // Retorna a data de devolução
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        
-        return null; // Retorna null caso não encontre
-    }
     
 }
