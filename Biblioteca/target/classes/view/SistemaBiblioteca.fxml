@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.MainController">
+    <children>
+        <!-- MenuBar -->
+        <MenuBar style="-fx-border-width: 0px 0px 2px 0px;" VBox.vgrow="NEVER">
+            <menus>
+                <!-- Menu Aluno -->
+                <Menu text="Aluno">
+                    <items>
+                        <MenuItem text="Cadastrar Aluno" onAction="#cadastrarAluno" />
+                        <MenuItem text="Editar Aluno" onAction="#editarAluno" />
+                        <MenuItem text="Excluir Aluno" onAction="#excluirAluno" />
+                        <MenuItem text="Listar Alunos" onAction="#listarAlunos" />
+                    </items>
+                </Menu>
+
+                <!-- Menu Livro -->
+                <Menu text="Livro">
+                    <items>
+                        <MenuItem text="Cadastrar Livro" onAction="#cadastrarLivro" />
+                        <MenuItem text="Editar Livro" onAction="#editarLivro" />
+                        <MenuItem text="Excluir Livro" onAction="#excluirLivro" />
+                        <MenuItem text="Listar Livros" onAction="#listarLivros" />
+                    </items>
+                </Menu>
+
+                <!-- Menu Emprestimo -->
+                <Menu text="Empréstimo">
+                    <items>
+                        <MenuItem text="Novo Empréstimo" onAction="#novoEmprestimo" />
+                    </items>
+                </Menu>
+
+                <!-- Menu Devolução -->
+                <Menu text="Devolução">
+                    <items>
+                        <MenuItem text="Registrar Devolução" onAction="#registrarDevolucao" />
+                    </items>
+                </Menu>
+
+                <!-- Menu Sair -->
+                <Menu text="Sair">
+                    <items>
+                        <MenuItem text="Sair do Sistema" onAction="#sairSistema" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <!-- AnchorPane Central -->
+        <AnchorPane prefHeight="455.0" prefWidth="800.0" VBox.vgrow="ALWAYS">
+            <children>
+                <ImageView id="logoImageView" fitHeight="224.0" fitWidth="551.0" layoutX="125.0" layoutY="115.0">
+                    <image>
+                        <Image url="@logo-uenp.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

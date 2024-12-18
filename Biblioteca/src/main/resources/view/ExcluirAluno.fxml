@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.AlunoController">
+   <children>
+      <MenuBar style="-fx-border-color: #0f0099; -fx-border-width: 0px 0px 2px;">
+      </MenuBar>
+
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="244.0" layoutY="38.0" text="Excluir Aluno" textFill="#0f0099" style="-fx-font-size: 18px;" />
+            <Label layoutX="160.0" layoutY="88.0" text="Selecione o Aluno" textFill="#0f0099" />
+            <ComboBox fx:id="comboAluno" layoutX="225.0" layoutY="84.0" promptText="Aluno" style="-fx-border-color: #0f0099;" />
+
+            <Button layoutX="268.0" layoutY="267.0" text="Excluir" onAction="#excluirAluno" style="-fx-background-color: #d32f2f; -fx-text-fill: white;" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

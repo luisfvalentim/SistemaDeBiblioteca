@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.EmprestimoController">
+    <children>
+
+        <!-- AnchorPane Principal -->
+        <AnchorPane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <!-- Título -->
+                <Label layoutX="220.0" layoutY="30.0" text="Empréstimo de Livro" textFill="#0f0099" style="-fx-font-size: 18px;" />
+
+                <!-- Labels -->
+                <Label layoutX="130.0" layoutY="100.0" text="Aluno" textFill="#0f0099" />
+                <Label layoutX="130.0" layoutY="140.0" text="Livro" textFill="#0f0099" />
+                <Label layoutX="130.0" layoutY="180.0" text="Data de Empréstimo" textFill="#0f0099" />
+
+                <!-- ComboBoxes -->
+                <ComboBox fx:id="comboAluno" layoutX="230.0" layoutY="95.0" prefWidth="200.0" promptText="Selecione o Aluno" />
+                <ComboBox fx:id="comboLivro" layoutX="230.0" layoutY="135.0" prefWidth="200.0" promptText="Selecione o Livro" />
+
+                <!-- DatePicker -->
+                <DatePicker fx:id="dataEmprestimo" layoutX="230.0" layoutY="175.0" prefWidth="200.0" />
+
+                <!-- Botão Salvar -->
+                <Button layoutX="260.0" layoutY="230.0" text="Salvar" onAction="#salvarEmprestimo" style="-fx-background-color: #0f0099; -fx-text-fill: white;" />
+
+                <!-- Logo -->
+                <ImageView layoutX="470.0" layoutY="10.0" fitHeight="80.0" fitWidth="100.0">
+                    <image>
+                        <Image url="@logo-uenp.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

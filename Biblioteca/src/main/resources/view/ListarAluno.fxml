@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" spacing="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.AlunoController">
+   <children>
+      <!-- Tabela de Alunos -->
+      <TableView fx:id="tabelaAlunos" prefHeight="300.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="colunaNome" text="Nome" prefWidth="200.0"/>
+            <TableColumn fx:id="colunaMatricula" text="Matrícula" prefWidth="150.0"/>
+            <TableColumn fx:id="colunaCpf" text="CPF" prefWidth="150.0"/>
+            <TableColumn fx:id="colunaEndereco" text="Endereço" prefWidth="200.0"/>
+         </columns>
+      </TableView>
+   </children>
+</VBox>

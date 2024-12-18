@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.LivroController">
+    <children>
+        <!-- AnchorPane Principal -->
+        <AnchorPane prefHeight="500.0" prefWidth="600.0">
+            <children>
+                <!-- Título da Janela -->
+                <Label layoutX="200.0" layoutY="20.0" text="Cadastro de Livro" textFill="#0f0099" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+                <!-- Labels e Campos de Texto -->
+                <Label layoutX="50.0" layoutY="70.0" text="Código" textFill="#0f0099" />
+                <TextField fx:id="campoCodigo" layoutX="150.0" layoutY="65.0" prefWidth="300.0" promptText="Código do Livro" />
+
+                <Label layoutX="50.0" layoutY="110.0" text="Título" textFill="#0f0099" />
+                <TextField fx:id="campoTitulo" layoutX="150.0" layoutY="105.0" prefWidth="300.0" promptText="Título do Livro" />
+
+                <Label layoutX="50.0" layoutY="150.0" text="Autor" textFill="#0f0099" />
+                <TextField fx:id="campoAutor" layoutX="150.0" layoutY="145.0" prefWidth="300.0" promptText="Autor do Livro" />
+
+                <Label layoutX="50.0" layoutY="190.0" text="ISBN" textFill="#0f0099" />
+                <TextField fx:id="campoIsbn" layoutX="150.0" layoutY="185.0" prefWidth="300.0" promptText="ISBN do Livro" />
+
+                <Label layoutX="50.0" layoutY="230.0" text="Edição" textFill="#0f0099" />
+                <TextField fx:id="campoEdicao" layoutX="150.0" layoutY="225.0" prefWidth="300.0" promptText="Edição do Livro" />
+
+                <Label layoutX="50.0" layoutY="270.0" text="Ano" textFill="#0f0099" />
+                <TextField fx:id="campoAno" layoutX="150.0" layoutY="265.0" prefWidth="300.0" promptText="Ano de Publicação" />
+
+                <!-- CheckBoxes -->
+                <CheckBox fx:id="checkboxDisponivel" layoutX="150.0" layoutY="310.0" text="Disponível" />
+                <CheckBox fx:id="checkboxExemplarBiblioteca" layoutX="250.0" layoutY="310.0" text="Exemplar Biblioteca" />
+
+                <!-- Botão Salvar -->
+                <Button layoutX="250.0" layoutY="360.0" text="Salvar" onAction="#cadastrarLivro" style="-fx-background-color: #0f0099; -fx-text-fill: white;" />
+
+
+                <!-- Logo -->
+                <ImageView layoutX="450.0" layoutY="20.0" fitHeight="80.0" fitWidth="100.0">
+                    <image>
+                        <Image url="@logo-uenp.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

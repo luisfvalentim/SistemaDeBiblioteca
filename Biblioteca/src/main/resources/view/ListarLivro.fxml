@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.controller.LivroController">
+    <children>
+        <!-- AnchorPane Principal -->
+        <AnchorPane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <!-- Título -->
+                <Label layoutX="220.0" layoutY="20.0" text="Lista de Livros" textFill="#0f0099" style="-fx-font-size: 18px;" />
+
+                <!-- TableView -->
+                <TableView fx:id="tabelaLivros" layoutX="30.0" layoutY="60.0" prefHeight="280.0" prefWidth="540.0">
+    <columns>
+        <TableColumn fx:id="colunaCodigo" text="Código" prefWidth="60.0" />
+        <TableColumn fx:id="colunaTitulo" text="Título" prefWidth="140.0" />
+        <TableColumn fx:id="colunaAutor" text="Autor" prefWidth="120.0" />
+        <TableColumn fx:id="colunaDisponivel" text="Disponível" prefWidth="110.0" />
+        <TableColumn fx:id="colunaExemplarBiblioteca" text="Exemplar Biblioteca" prefWidth="110.0" />
+    </columns>
+</TableView>
+
+
+                <!-- Botão Atualizar -->
+                <Button layoutX="260.0" layoutY="350.0" text="Atualizar" onAction="#listarLivros" style="-fx-background-color: #0f0099; -fx-text-fill: white;" />
+
+                <!-- Logo -->
+                <ImageView layoutX="470.0" layoutY="10.0" fitHeight="80.0" fitWidth="100.0">
+                    <image>
+                        <Image url="@logo-uenp.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
